@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.block-labels {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+.my-form {
+  display: flex;
+}
