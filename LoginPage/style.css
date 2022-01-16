@@ -6,14 +6,60 @@ body {
 .block-labels {
   display: block;
   font-size: 1.2rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 h1 {
   text-align: center;
 }
 
+/* form {
+  background-color: aquamarine;
+} */
+
 .my-form {
+  height: 100vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: cadetblue;
+}
+
+input {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+#sign-in-button {
+  display: block;
+  padding: 10px;
+  font-size: 1.0rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  background-color: rgb(14, 147, 209);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#sign-in-button:hover {
+  background-color: black;
+}
+
+#login-checkbox {
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+  color: rgb(114, 114, 114);
+}
+
+.my-border {
+  border: 1px solid black;
+  /* Thickness Shape Color */
+  padding: 20px;
+  border-radius: 5%;
+  box-shadow: 10px 10px 15px black;
+  /* Horizontal Vertial Blurriness Color */
+  background-color: aquamarine;
 }
