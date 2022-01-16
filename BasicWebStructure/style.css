@@ -1,4 +1,63 @@
+body, h1, p, h2, a, ul, li {
+  margin: 0;
+}
+
 body {
   margin: 0;
   background-color: burlywood;
+}
+
+header {
+  background-color: cornflowerblue;
+  text-align: center;
+}
+
+nav {
+  /* CSS Flex Box */
+  display: flex;
+  flex-direction: inline;
+  align-items: center;
+  justify-content: center;
+  /* This 4 line of code will horinzontally and vertically center the item */
+
+  background-color: cornsilk;
+  height: 25px;
+  /* MUST set height for the CSS Flex Box */
+
+}
+
+section {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: cornflowerblue;
+  height: 250px;
+}
+
+article {
+  background-color: cornsilk;
+}
+
+aside {
+  background-color: cornflowerblue;
+}
+
+footer {
+  background-color: cornsilk;
+}
+
+p {
+  text-align: center;
+}
+
+button {
+  padding: 8px;
+  margin: 10px;
+}
+
+section h1 {
+  margin-bottom: 20px;
 }
