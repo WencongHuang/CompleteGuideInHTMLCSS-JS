@@ -1,0 +1,129 @@
+/* 
+  We can do
+  @import url("paste the font link here");
+  and pick whatever font that is avaliable on
+  https://fonts.google.com/
+  and do font-family: "choic of your font";
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  background-image: url(/image/plants.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: teal; */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  flex-wrap: wrap;
+  /* background-color: skyblue; */
+}
+
+.container .card {
+  width: 40vw;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0,0,0,1);
+  border-radius: 10px;
+  border-top: 1px solid rgba(248,248,248,0.5);
+  /* 
+    backdrop-filter: blur(); 
+    is the main property for the glass effect 
+  */
+  backdrop-filter: blur(3px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.signIn {
+  width: 65%;
+  height: 2.75rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  margin: 10px auto 10px;
+  font-size: 1rem;
+}
+
+.content input:focus {
+  outline: none;
+}
+
+.content h1 {
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  font-size: 1.75rem;
+  margin-bottom: 35px;
+}
+
+.formInput {
+  /* height: 100%; */
+  width: 100%;
+}
+
+.formInput button {
+  width: 50%;
+  background-color: rgba(248,248,248,0.5);
+  border: none;
+  border: 1px solid rgba(248,248,248,0.5);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px auto 10px;
+  font-size: medium;
+}
+
+.formInput button:hover {
+  background-color: rgba(255, 247, 206, 0.952);
+  border: 1px solid rgba(255, 247, 206, 0.952);
+  font-weight: bold;
+}
+
+/* 
+  Below is a way to set the website to be responsive, meaning the size of the website will change depending on the size of the user's screen.
+*/
+@media(max-width: 800px) {
+  .container .card {
+    width: 60vw;
+  }
+}
+
+@media(max-width: 600px) {
+  .container .card {
+    width: 90vw;
+  }
+}
+
+@media(max-width: 400px) {
+  .container .card {
+    width: 95vw;
+  }
+}
