@@ -24,5 +24,25 @@ document.getElementById("my_paragraph").innerHTML = "The quick brown fox jump ov
 // querySelector uses CSS style to select the element.
 document.querySelector("#orange").style.color = "#FFAB76";
 
-//Variable
-let x = "Hello World!";
+// Variables - Dynamic
+let x = "Hello World!";  // string
+let age = 25; // number - Integer or Float
+let yes_or_no = true; // Boolean - true or false
+
+// use typeof(variable) to check the type of the variable
+console.log(typeof(x));
+
+// Storing HTML element into a Variable
+let myFormTitle = document.querySelector("#my_form_title");
+myFormTitle.innerHTML = "Web Development";
+myFormTitle.style.color = "Green";
+myFormTitle.style.background = "Yellow";
+
+let myTextBox = document.querySelector("#my_textbox");
+myTextBox.value = "Nothing";
+
+let btn1 = document.querySelector("#my_btn");
+btn1.addEventListener('click', function () {
+  // alert("You clicked me!");
+  myFormTitle.innerHTML = myTextBox.value;
+});
