@@ -3,7 +3,11 @@ let myBtn = document.querySelector("#myBtn");
 let myList = document.querySelector("#myList");
 
 myBtn.addEventListener('click', function() {
-  let myElement = document.createElement("li");
-  myElement.innerHTML = myTextBox.value;
-  myList.appendChild(myElement);
+  if(myTextBox.value.trim() != "") {
+    let myElement = document.createElement("li");
+    // check out String.toUpperCase() or String.toLowerCase()
+    myElement.innerHTML = myTextBox.value.toUpperCase();
+    myList.appendChild(myElement);
+  }
+  
 });
