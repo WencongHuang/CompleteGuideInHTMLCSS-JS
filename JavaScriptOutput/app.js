@@ -46,3 +46,13 @@ btn1.addEventListener('click', function () {
   // alert("You clicked me!");
   myFormTitle.innerHTML = myTextBox.value;
 });
+
+let myTextBox2 = document.querySelector("#myTextbox2");
+let btn2 = document.querySelector("#btn2");
+let myList2 = document.querySelector("#myList2");
+
+btn2.addEventListener('click', function() {
+  let newElement2 = document.createElement("li");
+  newElement2.innerHTML = myTextBox2.value; //doesn't work when it have more than two Textbox?
+  myList2.appendChild(newElement2);
+});
