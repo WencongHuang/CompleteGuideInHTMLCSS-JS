@@ -1,5 +1,4 @@
 let page_color = document.querySelector("#my-page");
-// need to fill the whole page and add some CSS
 
 let btn_red = document.querySelector("#btn-red");
 btn_red.addEventListener('click', function () {
