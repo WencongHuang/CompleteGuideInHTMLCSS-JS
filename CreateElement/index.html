@@ -9,7 +9,8 @@
 </head>
 <body>
   <!-- Check https://developer.mozilla.org/en-US/ for more resources-->
-  <!-- Create Element -->
+  <!-- Create Element with JS-->
+  
   <div class="createElement">
     <h3>Creating Element using JavaScript</h3>
     <input id="myTextBox" type="text" placeholder="Enter Data">
@@ -22,6 +23,45 @@
     </ul>
   </div>
 
+  <br>
+  <hr>
+  <br>
+
+  <!-- Create Element with HTML -->
+  <div id="myPage">
+    <div class="createElement2">
+      <h3>Creating Element using HTML</h3>
+      <input id="firstName" type="text" placeholder="Enter Firstname">
+      <input id="lastName" type="text" placeholder="Enter Lastname">
+      <button id="submitBtn">Add</button>
+    </div>
+
+    <div class="createElement3">
+      <table class="nameTable">
+        <thead>
+          <th>FirstName</th>
+          <th>LastName</th>
+        </thead>
+
+        <tbody id="nameTableBody">
+          <tr>
+            <td>Some</td>
+            <td>Body</td>
+          </tr>
+
+          <tr>
+            <td>No</td>
+            <td>Body</td>
+          </tr>
+
+          <tr>
+            <td>Any</td>
+            <td>Body</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>
