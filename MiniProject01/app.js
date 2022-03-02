@@ -43,6 +43,8 @@ divideBtn.addEventListener("click", function() {
     displayResult.innerHTML = "undefined";
   }else{
     // round the number to the 5 decimal point
+    // https://stackoverflow.com/questions/11832914/how-to-round-to-at-most-2-decimal-places-if-necessary
+    // Syntax: Math.round((num + Number.EPSILON) * 100) / 100
     displayResult.innerHTML = Math.round(((Number(num1.value) / Number(num2.value)) + Number.EPSILON) * 100000) / 100000;
   }
 });
