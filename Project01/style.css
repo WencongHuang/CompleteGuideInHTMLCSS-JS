@@ -1,0 +1,14 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#myPage {
+  background-color: #AD8B73;
+  height: 100vh;
+}
+
+#myContainer {
+  background-color: #FFFBE9;
+}
