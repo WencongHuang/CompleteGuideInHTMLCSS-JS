@@ -11,10 +11,35 @@
 <body>
   <div id="myPage">
     <div id="myContainer">
-      <h2>Our Life In Weeks</h2>
+
+      <h1>Our Life In Weeks</h1>
+      <p>Assuming that we are lucky enough to live in 90 years...</p>
+
+      <div id="displayResult">
+        <div class="answer">
+          <p>You have</p>
+          <h2 id="result">0</h2>
+          <p>weeks left...</p>
+        </div>
+        <div class="alert">
+          <p>Please enter your age below...</p>
+        </div>
+        <div class="alert2">
+          <p>Please enter a number...</p>
+        </div>
+        <div class="alert3">
+          <p>Congratulations! You have made it pass 90!</p>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <input type="text" id="ageInput" placeholder="Enter Your Age">
+        <button id="calcBtn">Calculate</button>
+        <button id="resetBtn">Reset</button>
+        <a href="index.html" class="refresh">Refresh</a>
+      </div>
 
     </div>
-
   </div>
   <script src="app.js"></script>
 </body>
