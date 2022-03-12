@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Helvetica, sans-serif;
@@ -15,7 +16,7 @@ body {
   overflow: hidden;
 }
 
-#nextSection1, #nextSection2, #nextSection3, #nextSection4 {
+#nextSection1, #nextSection2, #nextSection3, #nextSection4, #nextSection5, #nextSection6 {
   /* 
     visibility: hidden;
     is the same as 
@@ -36,9 +37,26 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  border-right: 4px solid rgba(255, 255, 255, 0.25);
-  border-bottom: 4px solid rgba(255, 255, 255, 0.25);
+  border-right: 4px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.5);
   transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.arrowUp::after{
+  content: "";
+  /* background-color: black; */
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 40rem;
+  left: 0;
+  border-right: 4px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+  transform: rotate(-135deg);
   cursor: pointer;
 }
 
@@ -233,4 +251,41 @@ form input, form textarea, button {
   padding: 10px;
   font-size: 1.2rem;
   margin-bottom: 5px;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form textarea {
+  font-family: inherit;
+  font-size: 1.2rem;
+}
+
+form textarea:focus {
+  outline: none;
+}
+
+form button {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease-in;
+}
+
+form button:hover {
+  background-color: rgb(58, 57, 57);
+  color: white;
+}
+
+@media(max-width: 600px) {
+  .skills {
+    width: 70vw;
+  }
+
+  .skillsWrap {
+    overflow: auto;
+  }
 }
