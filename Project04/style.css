@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
+
+* {
+  /* margin: 0;
+  padding: 0; */
+  font-family: 'Roboto', Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c6fced;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.wrap {
+  background-color: #b8c6fc;
+  border: 1px solid #9fa4a8;
+  margin: 20px 0;
+  padding: 30px;
+  position: relative;
+  color: rgb(51, 51, 51);
+  width: 600px;
+}
+
+.wrap.active {
+  background-color: white;
+}
+
+.wrapTitle {
+  margin: 0 35px 0 0;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+.wrap .wrapText {
+  display: none;
+  margin: 30px 0 0;
+}
+
+.wrap.active .wrapText {
+  display: block;
+}
+
+.wrapToggle {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+  position: absolute;
+  top: 30px;
+  right: 30px;
+
+  width: 30px;
+  height: 30px;
+}
+
+.wrap .wrapToggle .fa-circle-chevron-down {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.wrap .wrapToggle .fa-circle-xmark {
+  display: none;
+  font-size: 1.5rem;
+}
+
+.wrapToggle:focus {
+  outline: none;
+}
+
+.wrap.active .wrapToggle .fa-circle-xmark {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.wrap.active .wrapToggle .fa-circle-chevron-down {
+  display: none;
+  font-size: 1.5rem;
+}
