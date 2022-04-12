@@ -4,5 +4,137 @@
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  background-color: darkseagreen;
+  width: 100vw;
+  height: auto;
+  padding-top: 25px;
+}
+
+.content {
+  width: 100vw;
+  height: auto;
+  padding-top: 60px;
+
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h1 {
+  margin: 20px;
+}
+
+.container p {
+  max-width: 600px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+#siteTitle {
+  font-weight: bold; 
+}
+
+.mainNav {
+  margin-left: 60px;
+  padding-top: 10px 0 10px;
+  position: absolute;
+  right: 0;
+}
+
+.mainNavList li {
+  display: inline;
+
+}
+
+.mainNavList li a {
+  margin-right: 20px;
+}
+
+.text {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.text:visited {
+  color: rgb(34, 31, 31);
+}
+
+.wrapBtn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  outline: none;
+}
+
+.openBtn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.wrap {
+  background-color: darksalmon;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.wrap.active {
+  transform: translateX(0);
+}
+
+.wrapBlack {
+  background-color: rgb(34, 31, 31);
+  width: 60%;
+  max-width: 480px;
+  transition-delay: 0.15s;
+}
+
+.wrapWhite {
+  background-color: white;
+  width: 95%;
+  padding: 40px;
+  position: relative;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  opacity: 0.4;
+}
+
+.sideNavList {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.sideNavList li {
+  margin: 20px 0;
+}
+
+.sideNavList li a, .mainNavList li a {
+  color: rgb(34, 31, 31);
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .mainNav {
+    display: none;
+  }
 }
