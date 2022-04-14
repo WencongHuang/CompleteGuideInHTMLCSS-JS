@@ -9,9 +9,9 @@
 
 body {
   background-color: darkseagreen;
-  width: 100vw;
+  /* width: 100vw;
   height: auto;
-  padding-top: 25px;
+  padding-top: 25px; */
 }
 
 .content {
@@ -47,6 +47,7 @@ body {
   padding-top: 10px 0 10px;
   position: absolute;
   right: 0;
+  top: 22px;
 }
 
 .mainNavList li {
